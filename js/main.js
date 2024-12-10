@@ -42,10 +42,14 @@ function addUsers() {
     usersList.push(user);
     localStorage.setItem("usersData", JSON.stringify(usersList));
 
+    
+
     Registered();
     clearFields();
-
-    // window.open("./login.html" , "_self")
+    setTimeout( function(){
+      window.open("./login.html" , "_self")
+    } , 2000 )
+    
   }
 }
 
